@@ -5,6 +5,9 @@ name = "pvc"
 requires-python = ">= 3.11"
 dynamic = ["version"]
 
+[project.scripts]
+pvc = "pvc.package_version_checker:pvc"
+
 [build-system]
 build-backend = "hatchling.build"
 requires = ["hatchling"]
@@ -12,6 +15,12 @@ requires = ["hatchling"]
 [tool.hatch.version]
 path = "src/pvc/VERSION.txt"
 pattern = "(?P<version>\\d+\\.\\d+\\.\\d+)"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pvc"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/pvc"]
 
 [tool.pixi.workspace]
 channels = ["conda-forge"]
