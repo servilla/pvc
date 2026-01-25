@@ -355,7 +355,7 @@ packages:
 - pypi: ./
   name: pvc
   version: 0.1.0
-  sha256: 7081655adadea7fd7893140566ccbc2b175350ec43de601b096862a57a7097c5
+  sha256: c5a73b9621b259e4713abb80fdc6a71920dea6208baedc5547e405f443c65f1a
   requires_python: '>=3.11'
 - conda: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.2-pyhd8ed1ab_0.conda
   sha256: 5577623b9f6685ece2697c6eb7511b4c9ac5fb607c9babc2646c811b428fd46a
