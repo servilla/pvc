@@ -39,7 +39,7 @@ click = ">=8.3.1,<9"
 daiquiri = ">=3.0.0,<4"
 ruff = ">=0.14.13,<0.15"
 pytest = ">=9.0.2,<10"
-pip = ">=25.3,<26"
+pip = ">=26.0.1,<27"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
